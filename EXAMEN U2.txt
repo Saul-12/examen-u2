@@ -1,0 +1,37 @@
+funcionInicio= do
+    funcionMenu True
+funcionMenu hacer = do
+    if hacer
+        then do
+        putStrLn("| ..........BIENVENIDO............ |\n\n INGRESA TUS DATOS DE FECHA PORFAVOR")
+        putStrLn("\n1.- INGRESA TU DIA ")
+        putStrLn("2.- INGRESA TU MES")
+        putStrLn("7.- SALIR")
+        opc <- getLine
+   
+		case opc of
+          	  "1" -> INGRESAR DIA DE NACIMIENTO
+            	  "2" -> INGRESAR MES DE NACIMIENTO
+		  "3" -> funcionMenu False
+    		else
+        		putStr "VUELVE PRONTO... \n"
+
+dia de nacimiento n= do
+	 if n <=30
+        	then do
+                  print n
+            
+    else do
+        putStrLn("\n TU FECHA DE NACIMIENTO ES \n")
+	funcionMenu True
+
+
+mes de nacimiento n= do
+	 if n <=12
+        	then do
+                  print n
+            
+    else do
+        putStrLn("\n TU FECHA DE NACIMIENTO ES \n")
+	funcionMenu True
+
